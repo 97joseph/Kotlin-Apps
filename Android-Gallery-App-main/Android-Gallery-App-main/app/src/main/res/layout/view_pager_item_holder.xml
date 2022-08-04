@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.gallery.ui.ZoomableImageView
+        android:id="@+id/pagerImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerInside"
+        tools:srcCompat="@tools:sample/avatars"
+        android:background="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/ivPlayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:minWidth="46dp"
+        android:minHeight="46dp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/exo_styled_controls_play"
+        android:focusable="true"
+        android:contentDescription="@string/play"/>
+</FrameLayout>
+
